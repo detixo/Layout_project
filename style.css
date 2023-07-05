@@ -5,6 +5,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', monospace;
 }
 .top{
     font-size: 24px;
@@ -15,29 +17,93 @@ body{
     font-size: 18px;
     color: #E5E7EB;
     text-decoration: none;
+    align-self: stretch;
 }
 .header p{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
-ul{
-    list-style-type: none;
-}
 .quote{
     background-color: #E5E7EB;
     font-size: 36px;
     font-style: light italic;
     color: #1F2937;
-    text-align: center;
+    padding: 80px 320px;
 }
 h1{
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin: 0;
+    padding: 0;
 }
-.text, button{
+.info, button{
     background-color: #3882F6;
     border: 2px#F9FAF8 solid;
     border-radius: 10px;
+}
+button{
+    padding: 7px 35px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.bottom .sign{
+    border: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card img{
+    width: 80px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right img{
+    width: 470px;
+    height: 250px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 200px 120px 200px;
+    gap: 130px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+}
+.bottom{
+    display: flex;
+    align-self: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.info{
+    padding: 40px 200px;
+}
+p{
+    margin: 0;
+}
+.author{
+    text-align: end;
+    font-weight: bold;
+    color: black;
 }
