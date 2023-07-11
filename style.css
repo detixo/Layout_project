@@ -6,37 +6,47 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Courier New', monospace;
+    font-family: Tahoma, sans-serif;
 }
-.top{
+.top, .text p{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
 }
-.header, .footer, .header a{
-    background-color: #1F2937;
-    font-size: 18px;
-    color: #E5E7EB;
-    text-decoration: none;
-    align-self: stretch;
-}
-.header p{
+.maintxt{
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
+.subtext, a{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.card .subtext{
+    color: rgb(68, 68, 68);
+    text-align: center;
+}
+.header, .footer, .header a{
+    background-color: #1F2937;
+    text-decoration: none;
+    align-self: stretch;
+}
+
 .quote{
     background-color: #E5E7EB;
     font-size: 36px;
-    font-style: light italic;
+    font-style: italic;
     color: #1F2937;
-    padding: 80px 320px;
+    padding: 118px 320px;
 }
-h1{
+.main h1{
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
     margin: 0;
     padding: 0;
+    text-align: center;
+
 }
 .info, button{
     background-color: #3882F6;
@@ -44,6 +54,7 @@ h1{
     border-radius: 10px;
 }
 button{
+    margin: 10px 0;
     padding: 7px 35px;
     color: white;
     font-size: 17px;
@@ -52,16 +63,24 @@ button{
 .bottom .sign{
     border: none;
 }
-.container{
+.container h1{
+    margin-bottom: 40px;
+}
+.subcont{
     display: flex;
     justify-content: center;
 }
 .card img{
-    width: 80px;
-    height: 130px;
-    display: flex;
+    width: 180px;
+    height: 180px;
+    border: 3px solid #3882F6;
+    border-radius: 8%;
+    margin-bottom: 10px;
+}
+.card{
+     display: flex;
     flex-direction: column;
-    
+    margin: 0 25px;
 }
 .right img{
     width: 470px;
@@ -70,7 +89,7 @@ button{
 .header{
     display: flex;
     flex-direction: column;
-    padding: 10px 200px 120px 200px;
+    padding: 25px 200px 100px 200px;
     gap: 130px;
 }
 .top{
@@ -97,7 +116,13 @@ ul{
     align-items: center;
 }
 .info{
-    padding: 40px 200px;
+    padding: 40px 150px;
+    color: white;
+}
+.text p{
+    color: white;
+    padding: 0;
+    margin: 0;
 }
 p{
     margin: 0;
@@ -106,4 +131,10 @@ p{
     text-align: end;
     font-weight: bold;
     color: black;
+}
+.footer{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 18px;
+    color: #E5E7EB;
 }
